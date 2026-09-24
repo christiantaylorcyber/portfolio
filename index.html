@@ -176,6 +176,7 @@
   .job::before{content:"";position:absolute;left:calc(-2.25rem + 2px);top:.45rem;width:11px;height:11px;border-radius:50%;background:var(--bg);border:2px solid var(--faint);transition:border-color .5s,box-shadow .5s,background .5s}
   .job.in::before{border-color:var(--accent);background:var(--accent);box-shadow:0 0 0 5px rgba(79,227,193,.12)}
   .job .when{color:var(--faint);padding-top:.2rem}
+  .job .when .loc{display:inline-block;margin-top:.35rem;color:var(--faint);font-size:.72rem}
   .job .when .now{display:inline-block;margin-top:.5rem;padding:.15rem .55rem;border-radius:999px;background:var(--accent-dim);color:var(--accent);font-size:.7rem}
   .job h3{font-family:var(--font-display);font-weight:700;font-size:clamp(1.3rem,1.15rem + .6vw,1.6rem);letter-spacing:-.015em;line-height:1.2}
   .job .org{color:var(--accent);font-weight:500;margin-top:.2rem}
@@ -344,7 +345,7 @@
         </div>
         <div class="about-text">
           <p class="reveal" style="--d:.1s">I'm a cybersecurity specialist at <strong>Secure Halo</strong> with a B.S. in Cybersecurity from <strong>BYU–Idaho</strong>. My work spans <strong>governance, risk &amp; compliance</strong>, <strong>third-party risk management</strong>, and building <strong>incident response programs</strong> that hold up when something actually happens.</p>
-          <p class="reveal" style="--d:.18s">My offensive background covers penetration testing, social engineering, and phishing campaigns. I also have SOC analyst experience with tools like Splunk and Security Onion. That mix lets me write controls with a clear picture of how they'll be tested and how they'll fail.</p>
+          <p class="reveal" style="--d:.18s">I run penetration tests, social engineering engagements, and phishing campaigns for clients, along with dark web monitoring and vulnerability scanning. Before that, I triaged alerts as a Tier 1 SOC analyst using Splunk, Security Onion, and Wireshark. Seeing both sides means I write controls knowing how they'll be tested and where they'll break. I also enjoy explaining technical findings to people who aren't technical.</p>
         </div>
       </div>
 
@@ -367,12 +368,12 @@
         <article class="card reveal" style="--d:.18s">
           <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg></div>
           <h3>Pentesting</h3>
-          <p>Offensive testing, social engineering, and phishing simulations.</p>
+          <p>Penetration testing, social engineering, and phishing campaigns.</p>
         </article>
         <article class="card reveal" style="--d:.24s">
           <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M7 12l2.5-3 2.5 2 3-4 2 3M8 20h8M12 16v4"/></svg></div>
           <h3>SOC Operations</h3>
-          <p>Alert triage, log analysis, and network monitoring.</p>
+          <p>Alert triage in Splunk and Security Onion, plus packet analysis in Wireshark.</p>
         </article>
       </div>
     </div>
@@ -395,11 +396,12 @@
             <h3>Cybersecurity Specialist</h3>
             <div class="org">Secure Halo</div>
             <ul>
+              <li>Conduct penetration tests and social engineering engagements that assess client defenses from an attacker's point of view.</li>
               <li>Lead phishing campaigns, dark web monitoring, and vulnerability scans across multiple client environments, and turn the findings into prioritized remediation guidance.</li>
               <li>Prepare and present client reports that explain risk and recommended controls to both technical and executive audiences.</li>
               <li>Developed an incident response program for clients that defines escalation paths, containment procedures, and communication protocols to cut response time and limit business impact.</li>
             </ul>
-            <div class="tags"><span class="tag">Phishing Campaigns</span><span class="tag">Dark Web Monitoring</span><span class="tag">Vulnerability Scanning</span><span class="tag">IR Program</span><span class="tag">Client Reporting</span></div>
+            <div class="tags"><span class="tag">Penetration Testing</span><span class="tag">Social Engineering</span><span class="tag">Phishing Campaigns</span><span class="tag">Dark Web Monitoring</span><span class="tag">Vulnerability Scanning</span><span class="tag">IR Program</span><span class="tag">Client Reporting</span></div>
           </div>
         </div>
 
@@ -461,7 +463,7 @@
             <h3><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h11l5 5v11H4z"/><path d="M14 4v6h6M8 13h8M8 17h5"/></svg></span>Governance &amp; Frameworks</h3>
             <span class="mono">grc</span>
           </div>
-          <div class="chips"><span class="chip">NIST SP 800-53</span><span class="chip">NIST SP 800-61</span><span class="chip">ISO/IEC 27001</span><span class="chip">Third-Party Risk</span><span class="chip">Policy Development</span></div>
+          <div class="chips"><span class="chip">NIST SP 800-53</span><span class="chip">NIST SP 800-61</span><span class="chip">ISO/IEC 27001</span><span class="chip">Third-Party Risk</span><span class="chip">Risk Assessments</span><span class="chip">Security Audits</span><span class="chip">Compliance</span></div>
         </article>
 
         <article class="card skill-card reveal" style="--d:.08s">
@@ -469,7 +471,7 @@
             <h3><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 4.5-3.2 7.9-8 9-4.8-1.1-8-4.5-8-9V6z"/><path d="M12 8v5M12 16h.01"/></svg></span>Defense &amp; Detection</h3>
             <span class="mono">blue</span>
           </div>
-          <div class="chips"><span class="chip">Incident Response</span><span class="chip">Splunk</span><span class="chip">Security Onion</span><span class="chip">Log Analysis</span><span class="chip">Alert Triage</span></div>
+          <div class="chips"><span class="chip">Incident Response</span><span class="chip">Splunk</span><span class="chip">Security Onion</span><span class="chip">Wireshark</span><span class="chip">ServiceNow</span><span class="chip">Alert Triage</span><span class="chip">Dark Web Monitoring</span><span class="chip">Endpoint Hardening</span><span class="chip">Network Segmentation</span></div>
         </article>
 
         <article class="card skill-card reveal">
@@ -477,7 +479,7 @@
             <h3><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 17l6-5-6-5M12 19h8"/></svg></span>Offensive Security</h3>
             <span class="mono">red</span>
           </div>
-          <div class="chips"><span class="chip">Kali Linux</span><span class="chip">Penetration Testing</span><span class="chip">Social Engineering</span><span class="chip">Phishing Simulation</span></div>
+          <div class="chips"><span class="chip">Penetration Testing</span><span class="chip">Social Engineering</span><span class="chip">Phishing Campaigns</span><span class="chip">Vulnerability Scanning</span><span class="chip">Kali Linux</span></div>
         </article>
 
         <article class="card skill-card reveal" style="--d:.08s">
@@ -485,7 +487,7 @@
             <h3><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 18a4.5 4.5 0 0 1-.5-9A6 6 0 0 1 18 8.5a4 4 0 0 1-.5 9.5z"/></svg></span>Cloud, Data &amp; Scripting</h3>
             <span class="mono">build</span>
           </div>
-          <div class="chips"><span class="chip">AWS</span><span class="chip">Python</span><span class="chip">SQL</span></div>
+          <div class="chips"><span class="chip">Python</span><span class="chip">Bash</span><span class="chip">PowerShell</span><span class="chip">SQL</span><span class="chip">AWS</span></div>
         </article>
       </div>
     </div>
@@ -504,7 +506,7 @@
           <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5M22 9v6"/></svg></div>
           <div>
             <h3>Bachelor of Science in Cybersecurity</h3>
-            <p>Brigham Young University–Idaho</p>
+            <p>Brigham Young University–Idaho · Minor in Computer Programming</p>
           </div>
           <div class="date mono">Graduated Apr 2026</div>
         </article>
@@ -648,7 +650,7 @@
   });
 
   /* ---------- Typed roles ---------- */
-  const roles = ['governance, risk & compliance', 'incident response programs', 'third-party risk management', 'penetration testing & phishing', 'soc analysis'];
+  const roles = ['penetration testing', 'social engineering & phishing', 'incident response programs', 'vulnerability scanning', 'soc analysis & alert triage', 'governance, risk & compliance'];
   const typed = document.getElementById('typed');
   if (reduce) { typed.textContent = roles[0]; }
   else {
@@ -677,6 +679,7 @@
     '  - <span class="v">incident_response</span>',
     '  - <span class="v">pentest / social_eng</span>',
     '  - <span class="v">soc_ops</span>',
+    '<span class="k">stack</span>: [<span class="b">Splunk</span>, <span class="b">Security Onion</span>, <span class="b">Wireshark</span>]',
     '',
     '<span class="c">$</span> ./verify --integrity',
     '<span class="ok">[ok]</span> identity confirmed <span class="c">· status:</span> <span class="w">open to connect</span>'
